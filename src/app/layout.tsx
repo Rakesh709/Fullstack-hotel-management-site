@@ -1,7 +1,10 @@
 //layout the maine pag to control the website jsut like app in react
+import header  from './components/Header/Header'
+import { Poppins } from 'next/font/google'
 import type { Metadata } from 'next'
-import { Italiana, Poppins } from 'next/font/google'
+
 import './globals.css'
+
 
 const poppins = Poppins({ subsets: ['latin'],
  weight:[ "400", "500",  "700",  "900"], 
@@ -22,7 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={poppins.className}>
         <main className='font-normal'>
-           {/* <header></header> */}
+           <header/>
           {children}
           {/* <footer></footer> */}
           </main>
